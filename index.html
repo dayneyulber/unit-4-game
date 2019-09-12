@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Crystal Collector</title>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+            </head>
+            ​
+            <body>
+                <div class="container" id="header">
+                    <h3>Crystals Collector</h3>
+                </div>
+            ​
+                <br>
+            ​
+                <div class="container" id="instructions">
+                    <h6>You will be given a random number at the start of the game</h6>
+                    <h6>There are four crytals below. By clicking on a crystal you will add a specific amount of points to your
+                        total score.</h6>
+                    <h6>You win the game by matching your total score to random number, you lose the game if your total score goes
+                        above the random number.</h6>
+                    <h6>The value of each crystal is hidden from you until you click on it.</h6>
+                    <h6>Each time when the game starts, the game will change the value of each crystal.</h6>
+                </div>
+            ​
+                <br>
+            ​
+                <div class="container">
+                    <div class="numberToMatch">
+                        <h5>Number To Get:
+                            <span id="randomNumber"></span>
+                        </h5>
+                    </div>
+            ​
+                    <br>
+            ​
+                    <div class="winsAndLosses">
+                        <h5 class="wl">Wins:
+                            <span id="wins"></span>
+                        </h5>
+                        </br>
+                        <h5 class="wl">Losses:
+                            <span id="losses"></span>
+                        </h5>
+                    </div>
+            ​
+                    <br>
+            ​
+                    <div class="row">
+                        <input type="image" class=" col-2 button one" style="height: 100px; width: 50px;"
+                            src="assets/images/greencrystal.jpg"></input>
+                        <input type="image" class=" col-2 button two" style="height: 100px; width: 50px;"
+                            src="assets/images/redcrystal.jpg"></input>
+                        <input type="image" class=" col-2 button three" style="height: 100px; width: 50px;"
+                            src="assets/images/bluecrystal.jpg"></input>
+                        <input type="image" class=" col-2 button four" style="height: 100px; width: 50px;"
+                            src="assets/images/purplecrystal.jpg"></input>
+                    </div>
+            ​
+                    <br>
+            ​
+                    <div class="total">
+                        <h5>Your total score is:
+                            <span id="finalTotal"></span>
+                        </h5>
+                    </div>
+                </div>
+        </body>
+    <script type="text/javascript" src="assets\javascrip\game.js"></script>
+            
+</html>
