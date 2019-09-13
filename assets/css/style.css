@@ -1,0 +1,20 @@
+body {
+    background: url("../images/concrete_seamless.png");
+    
+}
+
+#header {
+    background: beige;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+#wl {
+    text-decoration: underline;
+}
+
+#total {
+    text-decoration: underline;
+}
