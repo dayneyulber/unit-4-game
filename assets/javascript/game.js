@@ -2,20 +2,19 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
     var total = 0;
-​
+
     var rock1 = Math.floor(Math.random() * 12) + 1;
-    console.log(rock1)
+
     var rock2 = Math.floor(Math.random() * 12) + 1;
-    console.log(rock2)
+
     var rock3 = Math.floor(Math.random() * 12) + 1;
-    console.log(rock3)
+
     var rock4 = Math.floor(Math.random() * 12) + 1;
-    console.log(rock4)
-​
+
     var randomNumber = Math.floor(Math.random() * 102) + 19;
     console.log(randomNumber);
     $("#randomNumber").text(randomNumber);
-​
+
     function reset() {
         randomNumber = Math.floor(Math.random() * 102) + 19;
         console.log(randomNumber);
@@ -30,9 +29,7 @@ $(document).ready(function () {
         console.log(rock3);
         rock4 = Math.floor(Math.random() * 12) + 1;
         console.log(rock4);
-​
-    }
-​
+    };
     $(".one").on("click", function () {
         total = total + rock1;
         $('#finalTotal').text(total);
@@ -46,10 +43,9 @@ $(document).ready(function () {
             $("#losses").text(losses);
             alert("You're a loser........");
             reset();
-        }
-​
+        };
     });
-​
+
     $(".two").on("click", function () {
         total = total + rock2;
         $('#finalTotal').text(total);
@@ -63,10 +59,9 @@ $(document).ready(function () {
             $("#losses").text(losses);
             alert("You're a loser........");
             reset();
-        }
-​
+        };
     });
-​
+
     $(".three").on("click", function () {
         total = total + rock3;
         $('#finalTotal').text(total);
@@ -80,10 +75,8 @@ $(document).ready(function () {
             $("#losses").text(losses)
             alert("You're a loser........");
             reset();
-        }
-​
+        };
     });
-​
     $(".four").on("click", function () {
         total = total + rock4;
         $('#finalTotal').text(total);
@@ -97,6 +90,6 @@ $(document).ready(function () {
             $("#losses").text(losses);
             alert("You're a loser........");
             reset();
-        }
+        };
     });
 });
